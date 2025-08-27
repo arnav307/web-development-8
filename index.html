@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* The specificity of this selector is 1 */
+        h1{
+            color: blue;
+        }
+        
+        /* The specificity of this selector is 10 */
+        .cpurple {
+            color: purple;
+        }
+        /* The specificity of this selector is 10+1=11 */
+        h1.yellow {
+            color: yellow;
+        }
+        /* The specificity of this selector is 10 */
+        .cred {
+            color: red;
+        }
+        /* This is the example of attribute selector  */
+        [arnav-b=b]{
+            background-color:blue;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum provident, 
+            autem vitae quod laborum saepe nam sed quibusdam aliquid in minima odit? Explicabo, 
+            maiores tempora! Atque maiores consequatur cum nulla magnam, optio laborum, 
+            quidem quisquam est earum illo consectetur alias iure, hic nesciunt?
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, 
+            voluptatum. Doloribus, cumque. Quasi, asperiores. Doloribus, 
+            voluptatibus. Doloremque, facilis. Voluptas, cumque! Doloremque, 
+            facilis. Voluptas, cumque! Doloremque, facilis.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, 
+            voluptatum. Doloribus, cumque. Quasi, asperiores. Doloribus, 
+            voluptatibus. Doloremque, facilis. Voluptas, cumque! Doloremque, 
+            facilis. Voluptas, cumque! Doloremque, facilis.
+        </p>
+        
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, 
+            voluptatum. Doloribus, cumque. Quasi, asperiores. Doloribus, 
+            voluptatibus. Doloremque, facilis. Voluptas, cumque! 
+            Doloremque, facilis. Voluptas, cumque! Doloremque, facilis.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quisquam, voluptatum. Doloribus, cumque. Quasi, asperiores. 
+            Doloribus, voluptatibus. Doloremque, facilis. Voluptas, cumque! 
+            Doloremque, facilis. Voluptas, cumque! Doloremque, facilis.
+        </p>
+
+    </div>
+
+
+    <div>
+        <h1 class="yellow cred cpurple" arnav-b="b"> hello </h1>
+        </h1>
+    </div>
+
+</body>
+</html>

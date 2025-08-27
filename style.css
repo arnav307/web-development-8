@@ -1,0 +1,12 @@
+p:first-child{
+    color:red;
+    background-color:rgb(248, 255, 37);
+}
+
+div p {
+    background-color:blue;
+    color:white;
+}
+.yellow{
+    color:rgb(81, 0, 255) ;
+}
